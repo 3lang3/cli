@@ -1,4 +1,18 @@
 {
+  "rules": {
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always",
+      {
+        "arraysInObjects": false
+      }
+    ],
+    "semi": ["warn", "always"]
+  },
   "extends": [
     "oclif",
     "oclif-typescript"

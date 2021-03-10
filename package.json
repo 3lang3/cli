@@ -10,6 +10,9 @@
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^3",
+    "chalk": "^4.1.0",
+    "conf": "^9.0.2",
+    "prompts": "^2.4.0",
     "tslib": "^1"
   },
   "devDependencies": {
