@@ -1,5 +1,19 @@
+import * as chalk from "chalk";
+import * as os from "os";
 import { Command, flags } from "@oclif/command";
 
+/**
+ * get your local ip address
+ */
+export const ip = () => {
+  const ip = os.networkInterfaces().en0[1].address;
+  const options = process.argv.slice(2);
+  if (options[0] === "-v") {
+    chalk.blue("v1.0.0");
+  } else {
+    chalk.green(`your ip is: ${ip}`);
+  }
+};
 export default class Hello extends Command {
   static description = "describe the command here";
 
