@@ -1,7 +1,7 @@
 {
   "rules": {
     "quotes": [
-      "error",
+      "never",
       "double"
     ],
     "object-curly-spacing": [
