@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-# cli
-work cli 
-
-### todo list
-
-- [ ] util tools 
-- [ ] create static site project (svelte)
-- [ ] create h5 project (create-react-app??)
-- [ ] create universal application (rax??)
-- [ ] create admin project (pro-and-design??)
-- [ ] create admin micro project (pro-and-design && umi-qiankun)
-- [ ] create nodejs micro service (koa2)
-=======
 cli
 ===
 
@@ -82,4 +68,3 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
 <!-- commandsstop -->
->>>>>>> master

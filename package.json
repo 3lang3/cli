@@ -1,13 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "langcli",
-  "version": "0.0.0",
-  "author": "3lang @3lang3",
-  "bin": {
-    "langcli": "./bin/run"
-  },
-  "bugs": "https://github.com/3lang3/langcli/issues",
-=======
   "name": "cli",
   "version": "0.0.0",
   "author": "3lang @3lang3",
@@ -15,27 +6,17 @@
     "cli": "./bin/run"
   },
   "bugs": "https://github.com/3lang3/cli/issues",
->>>>>>> master
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^3",
     "chalk": "^4.1.0",
-<<<<<<< HEAD
-    "conf": "^9.0.2",
-    "prompts": "^2.4.0",
-=======
     "prompts": "^2.4.0",
     "shelljs": "^0.8.4",
->>>>>>> master
     "tslib": "^1"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
-<<<<<<< HEAD
-    "@types/node": "^10",
-    "@types/prompts": "^2.0.9",
-=======
     "@oclif/test": "^1",
     "@types/chai": "^4",
     "@types/mocha": "^5",
@@ -43,16 +24,12 @@
     "@types/prompts": "^2.0.9",
     "@types/shelljs": "^0.8.8",
     "chai": "^4",
->>>>>>> master
     "eslint": "^5.13",
     "eslint-config-oclif": "^3.1",
     "eslint-config-oclif-typescript": "^0.1",
     "globby": "^10",
-<<<<<<< HEAD
-=======
     "mocha": "^5",
     "nyc": "^14",
->>>>>>> master
     "ts-node": "^8",
     "typescript": "^3.3"
   },
@@ -65,11 +42,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-<<<<<<< HEAD
-  "homepage": "https://github.com/3lang3/langcli",
-=======
   "homepage": "https://github.com/3lang3/cli",
->>>>>>> master
   "keywords": [
     "oclif"
   ],
@@ -77,29 +50,17 @@
   "main": "lib/index.js",
   "oclif": {
     "commands": "./lib/commands",
-<<<<<<< HEAD
-    "bin": "langcli",
-=======
     "bin": "cli",
->>>>>>> master
     "plugins": [
       "@oclif/plugin-help"
     ]
   },
-<<<<<<< HEAD
-  "repository": "3lang3/langcli",
-=======
   "repository": "3lang3/cli",
->>>>>>> master
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
-<<<<<<< HEAD
-    "test": "echo NO TESTS",
-=======
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
->>>>>>> master
     "version": "oclif-dev readme && git add README.md"
   },
   "types": "lib/index.d.ts"
