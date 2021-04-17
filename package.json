@@ -1,10 +1,11 @@
 {
   "name": "@zhp/cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "3lang @3lang3",
   "bin": {
-    "@zhp/cli": "./bin/run"
+    "cli": "./bin/run"
   },
+  "scope": "zhp",
   "bugs": "https://github.com/3lang3/cli/issues",
   "dependencies": {
     "@oclif/command": "^1",
