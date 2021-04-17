@@ -1,9 +1,13 @@
 {
-  "name": "cli",
-  "version": "0.0.5",
+  "name": "@sanlang/cli",
+  "version": "0.0.6",
   "author": "3lang @3lang3",
   "bin": {
-    "zhp-cli": "./bin/run"
+    "@sanlang/cli": "./bin/run",
+    "cli": "./bin/run"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "bugs": "https://github.com/3lang3/cli/issues",
   "dependencies": {
