@@ -1,6 +1,6 @@
 {
   "name": "@zhp/cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "3lang @3lang3",
   "bin": {
     "@zhp/cli": "./bin/run"
