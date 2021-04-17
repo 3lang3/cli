@@ -15,11 +15,11 @@ cli
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g @zhp/cli
+$ npm install -g @sanlang/cli
 $ cli COMMAND
 running command...
 $ cli (-v|--version|version)
-@zhp/cli/0.0.2 darwin-x64 node-v15.8.0
+@sanlang/cli/0.0.3 darwin-x64 node-v15.8.0
 $ cli --help [COMMAND]
 USAGE
   $ cli COMMAND
@@ -49,7 +49,7 @@ EXAMPLE
   $ cli create
 ```
 
-_See code: [src/commands/create.ts](https://github.com/3lang3/cli/blob/v0.0.2/src/commands/create.ts)_
+_See code: [src/commands/create.ts](https://github.com/3lang3/cli/blob/v0.0.3/src/commands/create.ts)_
 
 ## `cli help [COMMAND]`
 
@@ -84,5 +84,5 @@ EXAMPLE
   $ langcli ip
 ```
 
-_See code: [src/commands/run.ts](https://github.com/3lang3/cli/blob/v0.0.2/src/commands/run.ts)_
+_See code: [src/commands/run.ts](https://github.com/3lang3/cli/blob/v0.0.3/src/commands/run.ts)_
 <!-- commandsstop -->
