@@ -2,11 +2,6 @@
 *-error.log
 /.nyc_output
 /dist
-/lib
 /package-lock.json
 /tmp
-<<<<<<< HEAD
 node_modules/
-=======
-node_modules
->>>>>>> master
