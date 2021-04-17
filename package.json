@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "author": "3lang @3lang3",
   "bin": {
-    "cli": "./bin/run"
+    "@zhp/cli": "./bin/run"
   },
   "bugs": "https://github.com/3lang3/cli/issues",
   "dependencies": {

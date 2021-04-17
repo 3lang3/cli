@@ -15,12 +15,12 @@ const projects = [
   {
     title: "svelte",
     value: "svelte",
-    description: "基于svelte搭建的typescript脚手架",
+    description: "基于svelte搭建web的typescript脚手架",
   },
   {
     title: "cra",
     value: "cra",
-    description: "基于create-react-app eject后搭建的typescript脚手架",
+    description: "基于create-react-app搭建响应式h5的typescript脚手架",
   },
   {
     title: "taro",
@@ -79,20 +79,23 @@ export default class Create extends Command {
           type: "text",
           name: "projectName",
           message: "📥 What is your project name?",
-          initial: `yg-as-${template}`,
+          initial: `fe-yg-${template}`,
         },
         {
           onCancel: normalOnCancel,
         }
       );
-      shell.exec(
+      const execRs = shell.exec(
         `git clone --progress ${getGitRepoUrl(template)} ${projectName}`
       );
+      if (execRs.code !== 0) {
+        throw Error(execRs.stderr)
+      }
       this.log(chalk.green(`🚚 clone success`));
       this.log(`🔥 prepare: run [cd ${projectName} && npm install ]`);
       this.log(chalk.bold(`🧀 Boilerplate generate Done`));
     } catch (error) {
-      this.log(error.message);
+      this.log(chalk.red(error.message));
     }
   }
 }
