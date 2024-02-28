@@ -9,7 +9,7 @@ export default class Run extends Command {
 
   static arr = [1, 2, 3];
 
-  static flags = {
+  static flags: any = {
     help: flags.help({ char: "h" }),
     // flag with a value (-n, --name=VALUE)
     ip: flags.string({ char: "i", required: false, description: "get your ip address" }),
@@ -23,7 +23,7 @@ export default class Run extends Command {
   }
 
   async run() {
-    const { args, flags } = this.parse(Run);
+    const { args, flags } = this.parse(Run) as any;
 
     if (flags.ip) {
       console.log(flags.ip, args)

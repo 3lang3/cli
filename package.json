@@ -1,6 +1,6 @@
 {
   "name": "@sanlang/cli",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "3lang @3lang3",
   "bin": {
     "@sanlang/cli": "./bin/run",
@@ -59,7 +59,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "3lang3/cli",
+  "repository": "https://github.com/3lang3/cli.git",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint . --ext .ts --config .eslintrc",

@@ -44,7 +44,7 @@ export default class Create extends Command {
 
   static examples = [`$ cli create`];
 
-  static flags = {
+  static flags: any = {
     help: flags.help({ char: "h" }),
     // flag with a value (-n, --name=VALUE)
     name: flags.string({ char: "n", description: "name to print" }),
@@ -55,7 +55,7 @@ export default class Create extends Command {
   static args = [{ name: "file" }];
 
   async run() {
-    const { args, flags } = this.parse(Create);
+    const { args, flags } = this.parse(Create) as any;
 
     const name = flags.name ?? "world";
     if (args.file && flags.force) {
@@ -95,7 +95,7 @@ export default class Create extends Command {
       this.log(`🔥 prepare: run [cd ${projectName} && npm install ]`);
       this.log(chalk.bold(`🧀 Boilerplate generate Done`));
     } catch (error) {
-      this.log(chalk.red(error.message));
+      this.log(chalk.red((error as any).message));
     }
   }
 }

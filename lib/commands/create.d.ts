@@ -1,12 +1,8 @@
-import { Command, flags } from "@oclif/command";
+import { Command } from "@oclif/command";
 export default class Create extends Command {
     static description: string;
     static examples: string[];
-    static flags: {
-        help: import("@oclif/parser/lib/flags").IBooleanFlag<void>;
-        name: flags.IOptionFlag<string | undefined>;
-        force: import("@oclif/parser/lib/flags").IBooleanFlag<boolean>;
-    };
+    static flags: any;
     static args: {
         name: string;
     }[];

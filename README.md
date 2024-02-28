@@ -19,7 +19,7 @@ $ npm install -g @sanlang/cli
 $ cli COMMAND
 running command...
 $ cli (-v|--version|version)
-@sanlang/cli/0.0.6 darwin-x64 node-v15.8.0
+@sanlang/cli/0.0.7 darwin-arm64 node-v20.11.1
 $ cli --help [COMMAND]
 USAGE
   $ cli COMMAND
@@ -49,7 +49,7 @@ EXAMPLE
   $ cli create
 ```
 
-_See code: [src/commands/create.ts](https://github.com/3lang3/cli/blob/v0.0.6/src/commands/create.ts)_
+_See code: [src/commands/create.ts](https://github.com/3lang3/cli/blob/v0.0.7/src/commands/create.ts)_
 
 ## `cli help [COMMAND]`
 
@@ -66,7 +66,7 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.3.1/src/commands/help.ts)_
 
 ## `cli run [IP]`
 
@@ -84,5 +84,5 @@ EXAMPLE
   $ langcli ip
 ```
 
-_See code: [src/commands/run.ts](https://github.com/3lang3/cli/blob/v0.0.6/src/commands/run.ts)_
+_See code: [src/commands/run.ts](https://github.com/3lang3/cli/blob/v0.0.7/src/commands/run.ts)_
 <!-- commandsstop -->
